@@ -69,7 +69,6 @@ const color = computed(() => props.color || "rgba(255, 255, 255, 1)");
 
 .inner-content {
   position: relative;
-  border: 1px solid #222;
   font-size: 16px;
   text-align: center;
   z-index: 1;

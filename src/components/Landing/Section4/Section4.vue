@@ -87,9 +87,11 @@ onUnmounted(() => {
     @close="closeDrawer"
   />
   <div class="flex flex-col w-full justify-center items-center mb-10">
-    <h1 class="text-center text-6xl text-black mt-10">Completed Projects</h1>
+    <h1 class="text-center text-6xl text-red-900 mt-10 hero-h1 font-medium">
+      Completed Projects
+    </h1>
     <p
-      class="projects-p text-center text-xl font-medium w-[60%] my-4 text-gray-500"
+      class="header-p text-center text-xl font-medium w-[60%] my-4 text-gray-500"
     >
       Check out some of our completed projects and see what we are able to
       achieve.
@@ -106,13 +108,13 @@ onUnmounted(() => {
       <span
         class="z-[3] w-full h-full flex flex-col justify-center items-center bg-black/50 p-4"
       >
-        <h1 class="text-center text-6xl text-white">
+        <h1 class="text-center text-6xl text-white hero-h1 font-medium">
           {{ project.name }}
         </h1>
         <p class="text-center text-2xl text-white mt-10">
           {{ project.description }}
         </p>
-        <StarBorder inner-class="bg-black px-3 py-2" class="mt-10">
+        <StarBorder inner-class="bg-green-900 px-3 py-2 none" class="mt-10">
           <button class="text-white text-xl" @click="selectProject(project)">
             View Project
           </button>
@@ -134,9 +136,6 @@ onUnmounted(() => {
 @media (max-width: 1024px) {
   .grid-col-2 {
     display: none;
-  }
-  .projects-p {
-    width: 90vw;
   }
 }
 </style>

@@ -22,7 +22,7 @@ const loading = ref(false);
         <Label for="name" class="text-gray-300 text-lg">Name</Label>
         <Input
           id="name"
-          class="h-[60px] bg-transparent border-gray-600 rounded-xl"
+          class="h-[60px] bg-transparent border-gray-300 rounded-xl placeholder:text-gray-400"
           placeholder="John Doe"
           autocomplete="name"
           v-model="name"
@@ -33,7 +33,7 @@ const loading = ref(false);
         <Label for="email" class="text-gray-300 text-lg">Email</Label>
         <Input
           id="email"
-          class="h-[60px] bg-transparent border-gray-600 rounded-xl"
+          class="h-[60px] bg-transparent border-gray-300 rounded-xl placeholder:text-gray-400"
           placeholder="Email"
           autocomplete="email"
           v-model="email"
@@ -44,7 +44,7 @@ const loading = ref(false);
         <Label for="company" class="text-gray-300 text-lg">Company</Label>
         <Input
           id="company"
-          class="h-[60px] bg-transparent border-gray-600 rounded-xl"
+          class="h-[60px] bg-transparent border-gray-300 rounded-xl placeholder:text-gray-400"
           placeholder="Company"
           autocomplete="company"
           v-model="company"
@@ -55,7 +55,7 @@ const loading = ref(false);
         <Label for="message" class="text-gray-300 text-lg">Message</Label>
         <Textarea
           id="message"
-          class="h-[90px] bg-transparent border-gray-600 rounded-xl"
+          class="h-[90px] bg-transparent border-gray-300 rounded-xl placeholder:text-gray-400"
           placeholder="Type your message here"
           autocomplete="message"
           v-model="message"
@@ -64,7 +64,7 @@ const loading = ref(false);
       </div>
       <div class="w-full flex flex-row justify-start">
         <Button
-          class="bg-rose-700 hover:bg-yellow-600 hover:text-white rounded-full text-bold text-md text-white h-[50px]"
+          class="bg-green-900 hover:bg-green-600 hover:text-white rounded-full text-bold text-md text-white h-[50px]"
           :disabled="loading"
           :style="{ cursor: loading ? 'not-allowed' : 'pointer' }"
         >

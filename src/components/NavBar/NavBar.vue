@@ -31,7 +31,7 @@ const handleOpen = () => {
     <RouterLink to="/" class="pl-10">
       <img
         :src="taritailogo"
-        class="w-[90px] h-[90px] blk-element object-contain max-w-[80%]"
+        class="w-[60px] h-[60px] blk-element object-contain max-w-[80%]"
       />
     </RouterLink>
     <div
@@ -44,7 +44,9 @@ const handleOpen = () => {
       <RouterLink to="/about" class="nav-bar-item" :style="navBarItemStyle"
         >About</RouterLink
       >
-      <button class="nav-bar-item" :style="navBarItemStyle">Contact</button>
+      <RouterLink to="/#contact" class="nav-bar-item" :style="navBarItemStyle"
+        >Contact</RouterLink
+      >
       <RouterLink to="/about" class="nav-bar-item" :style="navBarItemStyle"
         >Blog</RouterLink
       >

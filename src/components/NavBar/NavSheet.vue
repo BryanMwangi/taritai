@@ -14,7 +14,8 @@ const emit = defineEmits(["close"]);
       <div class="flex flex-col justify-evenly items-center pr-10">
         <RouterLink to="/" class="nav-bar-item">Home</RouterLink>
         <RouterLink to="/about" class="nav-bar-item">About</RouterLink>
-        <button class="nav-bar-item">Contact</button>
+        <RouterLink to="/#contact" class="nav-bar-item">Contact</RouterLink>
+        <RouterLink to="/about" class="nav-bar-item">Blog</RouterLink>
       </div>
     </SheetContent>
   </Sheet>

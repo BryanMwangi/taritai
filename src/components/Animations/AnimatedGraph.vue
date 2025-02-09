@@ -24,8 +24,8 @@
         y2="138.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#B03838" />
-        <stop offset="0.825" stop-color="#B03838" stop-opacity="0.2" />
+        <stop stop-color="#C1272D" />
+        <stop offset="0.825" stop-color="#C1272D" stop-opacity="0.2" />
       </linearGradient>
     </defs>
 

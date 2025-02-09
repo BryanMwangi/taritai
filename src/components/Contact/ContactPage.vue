@@ -36,15 +36,15 @@ onUnmounted(() => {
 </script>
 <template>
   <section
-    class="contact-section flex flex-col w-full min-h-[100vh] h-max bg-black py-[10vh]"
+    class="contact-section flex flex-col w-full min-h-[100vh] h-max bg-[rgb(69,4,10)] py-[10vh]"
     ref="textRevealRef2"
   >
     <div class="flex flex-col justify-center items-center">
-      <h1 class="text-white text-center text-4xl font-semibold">
+      <h1 class="hero-h1 font-medium text-center text-6xl text-white">
         Take the first step toward the success of your business
       </h1>
       <p
-        class="contact-p text-white text-center text-xl font-medium w-[60%] my-4"
+        class="header-p text-white text-center text-xl font-medium w-[60%] my-4"
       >
         Taritai is reinventing project management and management consulting for
         for large enterprises. We are a team of experts who have been working in
@@ -54,10 +54,3 @@ onUnmounted(() => {
     <ContactForm />
   </section>
 </template>
-<style scoped>
-@media (max-width: 1024px) {
-  .contact-p {
-    width: 90vw;
-  }
-}
-</style>

@@ -52,7 +52,9 @@ const reviews = [
 </script>
 <template>
   <div>
-    <h1 class="text-center text-6xl px-3">What people say about us</h1>
+    <h1 class="text-center text-6xl px-3 hero-h1 font-medium text-red-900">
+      What people say about us
+    </h1>
     <p class="text-center text-xl mt-10 mb-20 text-gray-500 px-3">
       Read what our customers have to say about us. We are always listening to
       our customers and we are happy to hear their feedback.

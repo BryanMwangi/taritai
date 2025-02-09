@@ -48,11 +48,26 @@ a,
   padding: 3px;
 }
 a:hover {
-  color: #b23633;
+  color: #c1272d;
 }
+
+@font-face {
+  font-family: comorant;
+  src: url("./fonts/Cormorant-VariableFont_wght.ttf");
+}
+
+.hero-h1 {
+  font-family: comorant;
+}
+
 @media (min-width: 1024px) {
   body {
     display: flex;
     place-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .header-p {
+    width: 90vw;
   }
 }

@@ -15,17 +15,21 @@ import taritai_lettering from "@/assets/images/taritai_lettering.png";
       <div class="flex flex-col items-center justify-center text-center">
         <img
           :src="taritai_lettering"
-          class="min-h-[90px] blk-element object-contain"
+          class="min-h-[90px] blk-element object-contain max-w-[280px]"
           alt="taritai"
         />
-        <span class="text-6xl leading-tight mt-[-20px]">
-          is a global leader in project management and planning
+        <span
+          class="hero-h1 text-6xl leading-tight mt-[-20px] font-medium text-sky-950"
+        >
+          is a global leader in
+          <span class="text-red-700">project management</span> and
+          <span class="text-red-700">planning</span>
         </span>
       </div>
     </div>
 
     <p
-      class="hero-p text-center text-2xl leading-tight text-gray-500 mb-10 z-[2]"
+      class="hero-p text-center text-2xl leading-tight text-sky-950 mb-10 z-[2]"
     >
       Taritai has been responsible for some of the biggest projects in Kenya and
       ensuring that they are delivered on time and within budget.

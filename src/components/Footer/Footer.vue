@@ -1,7 +1,7 @@
 <script setup>
 import { RouterLink } from "vue-router";
 import taritailogo from "@/assets/images/taritai_logo.png";
-import taritai_lettering from "@/assets/images/taritai_lettering.png";
+import taritai_lettering from "@/assets/images/taritai_llp.png";
 import { BxFacebook } from "@kalimahapps/vue-icons";
 import { BxInstagram } from "@kalimahapps/vue-icons";
 import { AnOutlinedX } from "@kalimahapps/vue-icons";
@@ -10,21 +10,19 @@ import { BxLinkedinSquare } from "@kalimahapps/vue-icons";
 const year = new Date().getFullYear();
 </script>
 <template>
-  <section class="bg-zinc-100 w-full">
-    <div
-      class="h-max py-[2rem] w-full gap-3 md:gap-6 mx-auto px-6 md:max-w-5xl"
-    >
+  <section class="bg-zinc-100 w-full py-[2rem] h-max">
+    <div class="w-full gap-3 md:gap-6 mx-auto px-6 md:max-w-5xl">
       <div class="footer-container flex flex-row justify-between items-center">
         <div class="flex flex-col">
-          <div class="flex flex-row items-center gap-2">
+          <div class="flex flex-row items-center gap-2 mb-4">
             <img
               :src="taritailogo"
-              class="w-[70px] h-[70px] blk-element object-contain max-w-[80%]"
+              class="w-[40px] h-[40px] blk-element object-contain max-w-[80%]"
               alt="taritai logo"
             />
             <img
               :src="taritai_lettering"
-              class="w-[100px] h-[100px] blk-element object-contain max-w-[80%]"
+              class="h-[25px] blk-element object-contain max-w-[80%]"
               alt="taritai lettering"
             />
           </div>
@@ -32,7 +30,7 @@ const year = new Date().getFullYear();
             class="footer-actions flex flex-row justify-evenly items-center gap-[3rem] pr-10"
           >
             <RouterLink to="/about"> About Us </RouterLink>
-            <button>Contact Us</button>
+            <RouterLink to="/#contact"> Contact Us </RouterLink>
             <RouterLink to="/about"> Blog </RouterLink>
             <RouterLink to="/about"> Careers </RouterLink>
           </div>
@@ -47,16 +45,16 @@ const year = new Date().getFullYear();
           <div
             class="social-media flex flex-row justify-start items-center gap-2 w-full mt-2"
           >
-            <a>
+            <a href="#">
               <BxFacebook class="text-xl text-gray-500" />
             </a>
-            <a>
+            <a href="#">
               <BxInstagram class="text-xl text-gray-500" />
             </a>
-            <a>
+            <a href="#">
               <AnOutlinedX class="text-xl text-gray-500" />
             </a>
-            <a>
+            <a href="#">
               <BxLinkedinSquare class="text-xl text-gray-500" />
             </a>
           </div>

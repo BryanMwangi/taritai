@@ -18,12 +18,12 @@ const onIntersect = (e) => {
   e.forEach((entry) => {
     if (entry.isIntersecting) {
       animationStore.startBackDarkAnimation();
-      textRevealRef.value.style.backgroundColor = "rgb(0,0,0)";
+      textRevealRef.value.style.backgroundColor = "rgb(69,4,10)";
       textHeaderRef.value.style.color = "rgb(255,255,255)";
     } else {
       animationStore.stopBackDarkAnimation();
       textRevealRef.value.style.backgroundColor = "rgb(255,255,255)";
-      textHeaderRef.value.style.color = "rgb(0,0,0)";
+      textHeaderRef.value.style.color = "rgb(130,24,25)";
     }
   });
 };
@@ -81,13 +81,16 @@ onUnmounted(() => {
   <div class="wrapper-container" ref="textRevealRef">
     <div class="block m-auto w-full max-w-[calc(1234px+2rem)] px-[2rem]">
       <div class="text_reveal_wrapper">
-        <h1 class="text-6xl text-center text_header" ref="textHeaderRef">
+        <h1
+          class="text-6xl text-center text_header hero-h1 font-medium"
+          ref="textHeaderRef"
+        >
           About Us
         </h1>
         <div class="text_reveal_sticky">
           <div class="relative w-full h-full">
             <p
-              class="title-lead font-semibold leading-none text-left flex flex-wrap"
+              class="title-lead leading-none text-left flex flex-wrap font-thin"
             >
               <span
                 v-for="(word, index) in textArray"
