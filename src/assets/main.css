@@ -1,0 +1,58 @@
+@import "./base.css";
+
+#app {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: normal;
+  height: max-content;
+}
+
+.main-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+.main-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.main-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+  border: transparent;
+}
+
+.blk-element {
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -o-user-drag: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+  padding: 3px;
+}
+a:hover {
+  color: #b23633;
+}
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
